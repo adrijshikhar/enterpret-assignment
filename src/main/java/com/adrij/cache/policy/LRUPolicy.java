@@ -1,10 +1,9 @@
 package com.adrij.cache.policy;
 
 import com.adrij.cache.CacheItem;
-import com.adrij.cache.memory.BaseMemory;
 
 public class LRUPolicy<K, V> extends BasePolicy<K, V> {
-    public BaseMemory memoryImp;
+
 
     public LRUPolicy(int capacity) {
         super(capacity);

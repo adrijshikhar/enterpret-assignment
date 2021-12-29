@@ -1,13 +1,15 @@
 package com.adrij.cache.policy;
 
 import com.adrij.cache.CacheItem;
+import com.adrij.cache.memory.BaseMemory;
 
 public abstract class BasePolicy<K, V> implements Policy<K, V> {
     protected int CAPACITY;
-
     protected CacheItem<K, V> first;
     protected CacheItem<K, V> last;
     protected int size;
+
+    public BaseMemory memoryImp;
 
     public BasePolicy(int capacity) {
         this.CAPACITY = capacity;

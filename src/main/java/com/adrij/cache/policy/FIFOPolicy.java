@@ -1,12 +1,8 @@
 package com.adrij.cache.policy;
 
 import com.adrij.cache.CacheItem;
-import com.adrij.cache.memory.BaseMemory;
 
 public class FIFOPolicy<K, V> extends BasePolicy<K, V> {
-
-    public BaseMemory memoryImp;
-
     public FIFOPolicy(int capacity) {
         super(capacity);
     }

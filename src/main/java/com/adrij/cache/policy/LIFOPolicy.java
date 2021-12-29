@@ -1,11 +1,8 @@
 package com.adrij.cache.policy;
 
 import com.adrij.cache.CacheItem;
-import com.adrij.cache.memory.BaseMemory;
 
 public class LIFOPolicy<K, V> extends BasePolicy<K, V> {
-    public BaseMemory memoryImp;
-
     public LIFOPolicy(int capacity) {
         super(capacity);
     }
